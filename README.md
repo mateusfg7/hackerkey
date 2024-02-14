@@ -1,38 +1,53 @@
-# create-svelte
+<div align="center">
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+# Hacker Key
 
-## Creating a project
+A **Hacker Key** decoder/generator
 
-If you're seeing this, you've probably already done this step. Congrats!
+</div>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+> The Hacker Key Guide was inspired by Robert Hayden's excellent Geek Code which has been a long time hacker favorite.  However, the Geek Code has not been updated in a long time, and although the commercialization of the Internet has washed away much of the old hacker environment (MUDs, BBSes, DOS...), we must attempt to keep hacker traditions alive, by reimplementation if needed.
+> _-  [Pierre 'catwell' Chapuis](https://catwell.info/), creator of Hacker Key._
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Goals
+
+- Form for generate your own Hacker Key
+- Decode another Hacker Keys
+
+### With
+
+- [x] Svelte 5
+- [x] SvelteKit
+- [x] Typescript
+- [x] Tailwindcss
+- [x] Shadcn-UI (_shadcn-svelte_)
+- [ ] State in URL
+
+## Refs and Utils
+
+- **http://files.catwell.info/misc/mirror/hackerkey.html**
+- https://kit.svelte.dev/docs/state-management#storing-state-in-the-url
+- https://www.shadcn-svelte.com/docs
+- https://svelte-5-preview.vercel.app/docs
+- https://tailwindcss.com/docs/
+- https://github.com/paoloricciuti/sveltekit-search-params
+- https://www.reddit.com/r/sveltejs/comments/17qol55/url_as_a_state_manager/
+
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `pnpm install` and start a development server:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm run dev -- --open
 ```
 
 ## Building
 
-To create a production version of your app:
+To create a production version of the app:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+You can preview the production build with `pnpm run preview`.
