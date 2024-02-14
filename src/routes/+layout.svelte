@@ -4,4 +4,7 @@
 </script>
 
 <ModeWatcher />
-<slot />
+
+<div class="m-auto max-w-4xl py-8">
+	<slot />
+</div>
