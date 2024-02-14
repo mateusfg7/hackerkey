@@ -1,14 +1,16 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button';
+	import { Button, type ButtonProps } from '$lib/components/ui/button';
 	import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
 	import { Sun, Moon } from 'radix-icons-svelte';
 
 	import { setMode, resetMode } from 'mode-watcher';
+
+	let { class: className } = $props<ButtonProps>();
 </script>
 
 <DropdownMenu.Root>
 	<DropdownMenu.Trigger asChild let:builder>
-		<Button builders={[builder]} variant="outline" size="icon">
+		<Button builders={[builder]} variant="outline" size="icon" class={className}>
 			<Sun
 				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
 			/>
